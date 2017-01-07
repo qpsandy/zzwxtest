@@ -7,7 +7,13 @@ var param = {
     	staffB: {firstName: 'Shang', lastName: 'You'},
     	staffC: {firstName: 'Gideon', lastName: 'Lin'},
     	count : 0,
-    	length: 1
+    	length: 1,
+    	items: [
+    		{message: 'view0'},
+    		{message: 'view1'},
+    		{message: 'view2'},
+    		{message: 'view3'}
+    	]
 	},
 	doloading : function(e) {
 		console.log("loading: ");
