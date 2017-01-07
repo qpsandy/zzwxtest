@@ -1,0 +1,6 @@
+<view class="container">
+  <view>{{clickMsg}}</view>
+
+  <view id="v0" data-hi="hi-view0" data-qf="qf-view0" class="view-item" bindtap="clickV">click view0</view>
+  <view id="v1" data-hi="hi-view1" data-qf="qf-view1" class="view-item" bindtap="clickV">click view1</view>
+</view>

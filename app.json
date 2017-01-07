@@ -1,12 +1,49 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/databindpage/databindpage",
+    "pages/imagepage/imagepage",
+    "pages/iconpage/iconpage",
+    "pages/buttonpage/buttonpage",
+    "pages/eventpage/eventpage",
+    "pages/mypage/mypage",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/databindpage/databindpage",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "databindpage"
+    },{
+      "pagePath": "pages/imagepage/imagepage",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "imagepage"
+    },{
+      "pagePath": "pages/iconpage/iconpage",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "iconpage"
+    },{
+      "pagePath": "pages/buttonpage/buttonpage",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "buttonpage"
+    },{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/icon_component.png",
+      "selectedIconPath": "image/icon_component_HL.png",
+      "text": "首页"
+    }]
   }
 }

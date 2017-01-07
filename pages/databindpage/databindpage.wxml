@@ -1,0 +1,46 @@
+<view>
+  
+  <view> {{message}} </view>
+
+  <view wx:for="{{array}}"> {{item}} </view>
+
+  <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+  <view wx:elif="{{view == 'APP'}}"> APP </view>
+  <view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+  <template name="staffName">
+    <view>
+      FirstName: {{firstName}}, LastName: {{lastName}}
+    </view>
+  </template>
+
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>
+
+  <template name="odd">
+    <view> odd </view>
+  </template>
+
+  <template name="even">
+    <view> even </view>
+  </template>
+
+  <block wx:for="{{[1,2,3,4,5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" />
+  </block>
+
+  <view class="action" bindtap="add"> {{count}} </view>
+
+  <view wx:if="{{length > 5}}"> 1 </view>
+  <view wx:elif="{{length > 2}}"> 2 </view>
+  <view wx:else> 3 </view>
+
+  <block wx:if="{{true}}">
+    <view> view1 </view>
+    <view> view2 </view>
+  </block>
+
+
+
+ </view>

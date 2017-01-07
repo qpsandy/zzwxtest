@@ -1,0 +1,7 @@
+<view class="container">
+  <button size="mini">button mini</button>
+  <button size="default" type="primary">primary</button>
+  <button size="default" type="warn">warn</button>
+  <button size="default" type="primary" disabled="true">primary disabled</button>
+  <button size="default" type="primary" loading="true" bindtap="doloading">loading</button>
+</view>
